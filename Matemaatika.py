@@ -111,12 +111,16 @@ if koikkusimused > 0:
     prot = (oiged / (koikkusimused-1)) * 100 
     if prot < 60:
         hinne = 2
+        print("väga halb")
     elif 60 <= prot < 75:
         hinne = 3
+        print("halb")
     elif 75 <= prot < 90:
         hinne = 4
+        print("hea")
     else:
         hinne = 5
+        print("väga hea")
 
     print(" ")
     koikkusimused-=1 #et ei loeks 00 nagu vastust
